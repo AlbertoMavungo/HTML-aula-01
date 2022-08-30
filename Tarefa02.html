@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ATENDIMENTO (Terefa numero 2 de Alberto)</title>
+        <meta name ="description" content="essa é uma párgina referente ao atendimento"/>
+        <meta name="keyword" content="html 5, programação web A1lberto"/>
+    </head>
+    <body>
+        <font color="green" size="5px" face="arial">
+            <h1>Comunique conosco via e-mail</h1>
+        </font>
+        
+        <i>Seja bem vindo</i> <br/>
+        <i>Por favor, <b>preencha</b> o formulario, para:</i><br/>
+
+        <ul> 
+            <li>Feedback</li>
+            <li>Duvidas</li> 
+            <li>Criticas</li> 
+            <li>Sugestoes</li> 
+         </ul> 
+         Clique aqui para ver nossos produtos 
+         <a href="https://vejasp.abril.com.br/consumo/cheiro-bom-perfumes-e-colonias-para-todos-os-gostos/" 
+         target="new"> <!--Esse target new para abrir numa  nova aba--> 
+             Clique </a><br/> <br/>
+        
+        <form>
+            Nome: <input type="text"
+            id="textNome" 
+            placeholder="Digite o seu nome (campo obrigatorio)" 
+            size="40" required
+            pattern="[A-z\s]{6,100}"/> <br/> <br/>
+            
+            E-mail: <input type="email"
+            size="40"
+            id="email" required
+            placeholder="Digite o seu email (campo obrigatorio)">
+            <br>
+
+            contato: <input type="tel"
+            id="telefone"
+            placeholder="Digite o seu telefone"/> <br/>
+
+            Assunto: 
+            <select id="Assunto">
+                <option>Duvidas</option>
+                <option selected>Sugestoes</option>
+                <option>Criticas</option>
+            </select>
+
+            Deseja receber um email de retorno?: <br/>
+                <input type="radio" id="sim" name="periodo"> Sim
+                <input type="radio" id="nao" name="periodo"> Nao <br/>
+            Digite uma mensagem:
+            <textarea id="mensagem" placeholder="digite uma mensagem" required rows="5" cols="40"></textarea> 
+            <br>     
+            <button>Enviar</button>
+        </form>
+    </body>
+</html>

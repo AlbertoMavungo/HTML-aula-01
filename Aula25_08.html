@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca de objetos da bibi</title>
+        <meta name ="description" content="Essa é uma pagina que diz o quanto eu estou linda"/>
+        <meta name ="keywords" content="html 5, programação web, bibi"/>
+    </head>
+    <body>
+        <font color="#FF00FF" size="5px" face="arial" >
+        <h2> Pw - tags de objeto </h2>
+    </font>
+
+     <!--formas de fazer formulários-->
+            <form>
+            <!--De A a Z no minimo 6 caracteres e maxima de 100 caracteres-->
+                nome: <input type="text" 
+                id="texNome" 
+                placeholder="Digite seu nome" 
+                size="65" required
+                pattern="[A-z\s]{6,100}"/>
+                <br>
+                senha: <input type="password" 
+                id="senha" required 
+                size="65"
+                pattern="[0-9]{6,10}" 
+                title="Senha de 6 a 10 números"/> 
+                <br>
+                email: <input type="email"
+                size="65"
+                id="email" required>
+                <br>
+                altura: <input type="number" 
+                id="altura"
+                min="1.00" max="2.50" 
+                step ="0.01" required/>
+                <br>
+                idade: <input type="number" 
+                id="idade"
+                min="1" max="100" required/>
+                <br>
+                data: <input type="date" id="data" required> 
+                tempo: <input type="time" id="tempo" required>
+                <br>
+                volume: <input type="range" id="volume" required>
+                <br>
+                cor: <input type="color" id="cor"/> 
+                <br>
+                <input type="checkbox" id="aceite">
+                confirmo que quero receber informações </br>
+                periodo: <br/>
+                <input type="radio" id="p1" name="periodo"> Manhã
+                <input type="radio" id="p2" name="periodo"> Tarde
+                <input type="radio" id="p3" name="periodo"> Noite
+
+                <br>
+                <br>
+                <br>
+                mensagem:
+                <textarea id="msg" placeholder="digite uma mensagem" required rows="5" cols="40"></textarea> 
+                <br>
+                <br>    
+                unidade: 
+                <select id="unidade">
+                    <option>SC</option>
+    <!--pré selecionado-->
+                    <option selected>SP</option>
+                    <option>RJ</option>
+                    <option>RS</option>
+                </select>
+                <br>
+                <br>
+                <input type="text" id="endereco" 
+                data-variavel="123"
+                data-variavel="dhudh" />
+                <br>
+            <br>
+            <button> enviar </button>
+
+        </form>
+    </body>    
+</html>   
